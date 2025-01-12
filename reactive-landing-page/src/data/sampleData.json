@@ -1,0 +1,84 @@
+{
+    "file": "Reactive",
+    "type": "functional",
+    "state": ["projectGoals", "coreTeam"],
+    "children": [
+      {
+        "file": "Colin",
+        "type": "functional",
+        "state": ["frontend", "leadDeveloper"],
+        "children": [
+          {
+            "file": "HeroSection.tsx",
+            "type": "functional",
+            "state": ["tagline", "callToAction"],
+            "children": []
+          },
+          {
+            "file": "Dendrogram3D.tsx",
+            "type": "functional",
+            "state": ["threejsRendering"],
+            "children": []
+          }
+        ]
+      },
+      {
+        "file": "Susanna",
+        "type": "functional",
+        "state": ["backend", "dataVisualization"],
+        "children": [
+          {
+            "file": "DataProcessing.ts",
+            "type": "functional",
+            "state": ["jsonHandling", "APIintegration"],
+            "children": []
+          },
+          {
+            "file": "DatabaseSchema.ts",
+            "type": "functional",
+            "state": ["mongodb", "schemaDesign"],
+            "children": []
+          }
+        ]
+      },
+      {
+        "file": "Micah",
+        "type": "functional",
+        "state": ["testing", "qualityAssurance"],
+        "children": [
+          {
+            "file": "UnitTests.ts",
+            "type": "functional",
+            "state": ["jest", "mocha"],
+            "children": []
+          },
+          {
+            "file": "IntegrationTests.ts",
+            "type": "functional",
+            "state": ["APItests"],
+            "children": []
+          }
+        ]
+      },
+      {
+        "file": "Features",
+        "type": "functional",
+        "state": ["interactiveDendrogram", "stateAnalysis"],
+        "children": [
+          {
+            "file": "Feature1",
+            "type": "functional",
+            "state": ["demoVideo"],
+            "children": []
+          },
+          {
+            "file": "Feature2",
+            "type": "functional",
+            "state": ["liveVisualization"],
+            "children": []
+          }
+        ]
+      }
+    ]
+  }
+  
