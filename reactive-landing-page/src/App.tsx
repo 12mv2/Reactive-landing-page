@@ -1,17 +1,14 @@
-import './App.css'
-import Hero from './components/Hero.js'
-import Features from './components/Features.js';
-import Demo from './components/Demo.js';
-import GettingStarted from './components/GettingStarted.js';
-import Footer from './components/Footer.js';
-import Dendrogram3D from './components/Dendrogram3D.js'; 
-import sampleData from './data/sampleData.json';
+import './App.css';
+import Hero from './components/Hero';
+import Features from './components/Features';
+import Demo from './components/Demo';
+import GettingStarted from './components/GettingStarted';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <div>
+    <div className="bg-darkBackground min-h-screen">
       <Hero />
-      <Dendrogram3D data={sampleData} />
       <Features />
       <Demo />
       <GettingStarted />
@@ -20,4 +17,4 @@ function App() {
   );
 }
 
-export default App
+export default App;
