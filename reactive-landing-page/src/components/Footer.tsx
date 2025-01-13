@@ -20,7 +20,7 @@ const Footer = () => {
             GitHub
           </a>
           <a
-            href="https://reactive-docs.example.com"
+            href="https://github.com/oslabs-beta/reactive/blob/dev/README.md"
             target="_blank"
             rel="noopener noreferrer"
             className="text-neonPink hover:text-neonCyan text-sm"
@@ -28,10 +28,10 @@ const Footer = () => {
             Documentation
           </a>
           <a
-            href="mailto:support@reactive.com"
+            href="https://www.linkedin.com/company/105558276/"
             className="text-neonPink hover:text-neonCyan text-sm"
           >
-            Support
+            Contact
           </a>
         </div>
         <p className="mt-6 text-gray-500 text-xs">
