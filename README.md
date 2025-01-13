@@ -1,75 +1,50 @@
-# Vite Landing Page for Reactive
+# React + TypeScript + Vite
 
-## Overview
-This repository hosts the landing page for the Reactive. The landing page is built with **Vite** and showcases the project's features, functionality, and interactive elements. The goal is to provide users and contributors with a visually engaging and informative introduction to the project.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Features
-- **Interactive Demo**: Explore how the app works through live, interactive examples.
-- **3D Graphics**: Enhanced visuals created with **Three.js**.
-- **Video Integration**: Embedded YouTube videos to demonstrate the app.
-- **Responsive Design**: Accessible on devices of all sizes.
+Currently, two official plugins are available:
 
-## Getting Started
-### Prerequisites
-Ensure you have the following installed on your system:
-- [Node.js](https://nodejs.org/) (version 14 or higher)
-- [Git](https://git-scm.com/)
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-### Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/landing-page-repo.git
-   cd landing-page-repo
-   ```
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Start the development server:
-   ```bash
-   npm run dev
-   ```
-4. Open your browser and navigate to `http://localhost:3000`.
+## Expanding the ESLint configuration
 
-## Project Structure
-```
-.
-├── public          # Static assets (images, videos, etc.)
-├── src
-│   ├── components  # Reusable React components
-│   ├── assets      # 3D models, graphics, etc.
-│   ├── App.jsx     # Main app entry point
-│   └── styles      # CSS/SCSS files
-├── package.json    # Project dependencies and scripts
-└── vite.config.js  # Vite configuration
+If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+
+- Configure the top-level `parserOptions` property like this:
+
+```js
+export default tseslint.config({
+  languageOptions: {
+    // other options...
+    parserOptions: {
+      project: ['./tsconfig.node.json', './tsconfig.app.json'],
+      tsconfigRootDir: import.meta.dirname,
+    },
+  },
+})
 ```
 
-## How to Contribute
-We welcome contributions! Follow these steps:
-1. Fork the repository.
-2. Create a new branch:
-   ```bash
-   git checkout -b feature/your-feature-name
-   ```
-3. Commit your changes:
-   ```bash
-   git commit -m "Add your descriptive commit message"
-   ```
-4. Push to your fork and submit a pull request.
+- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
+- Optionally add `...tseslint.configs.stylisticTypeChecked`
+- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
 
-For more details, check the [CONTRIBUTING.md](CONTRIBUTING.md) file.
+```js
+// eslint.config.js
+import react from 'eslint-plugin-react'
 
-## Issues and Feedback
-If you encounter a bug or have a feature request, please [open an issue](https://github.com/your-username/landing-page-repo/issues).
-
-## License
-This project is licensed under the [MIT License](LICENSE).
-
-## Acknowledgments
-- **Vite** for fast and efficient builds.
-- **Three.js** for 3D graphics.
-- **React** for building the user interface.
-
----
-For more information about the main project, visit [Main Project Repository](https://github.com/your-username/main-repo).
-
+export default tseslint.config({
+  // Set the react version
+  settings: { react: { version: '18.3' } },
+  plugins: {
+    // Add the react plugin
+    react,
+  },
+  rules: {
+    // other rules...
+    // Enable its recommended rules
+    ...react.configs.recommended.rules,
+    ...react.configs['jsx-runtime'].rules,
+  },
+})
+```
