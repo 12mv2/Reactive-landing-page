@@ -3,11 +3,11 @@ import React from 'react';
 const Demo = () => {
   const videos = [
     {
-      title: "Reactive Overview",
+      title: "How to Use Reactive",
       url: "https://www.youtube.com/embed/KttJvc9F2a8?enablejsapi=1",
     },
     {
-      title: "How to Use Reactive",
+      title: "How to Publish a vsix Package",
       url: "https://www.youtube.com/embed/pF-JJ7jmMp4?enablejsapi=1",
     },
   ];

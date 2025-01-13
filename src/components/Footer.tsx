@@ -35,7 +35,7 @@ const Footer = () => {
           </a>
         </div>
         <p className="mt-6 text-gray-500 text-xs">
-          Licensed under the <a href="/LICENSE" className="text-neonPink hover:text-neonCyan">MIT License</a>. 
+          Licensed under the <a href="https://opensource.org/license/mit" className="text-neonPink hover:text-neonCyan">MIT License</a>. 
           Contributions welcome!
         </p>
 

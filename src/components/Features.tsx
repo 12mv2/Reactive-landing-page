@@ -12,9 +12,9 @@ const features = [
       icon: "🔍",
     },
     {
-      title: "Real-Time Visualizations",
+      title: "Component Insights",
       description:
-        "Watch changes in your React app come to life with live updates.",
+        "Analyze your React app with detailed statistics on component types, including the percentage of class and functional components.",
       icon: "⚡",
     },
   ];

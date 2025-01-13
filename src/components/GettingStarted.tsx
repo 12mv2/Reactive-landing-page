@@ -4,19 +4,20 @@ const steps = [
   {
     title: "Step 1: Download the Extension",
     description:
-      "Visit the GitHub repository and download the latest version of the Reactive VS Code extension.",
-    link: "https://github.com/oslabs-beta/reactive",
+    <p>
+    Visit the <a href="https://marketplace.visualstudio.com/items?itemName=oslabs-reactive.reactive" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">Marketplace</a> or Extensions tab in VSCode and download the latest version of the Reactive VS Code extension.
+    </p>
   },
   {
-    title: "Step 2: Install the Extension",
+    title: "Step 2: Open the Extension Host and Select a Top Level Component",
     description:
-      "Open VS Code, go to the Extensions Marketplace, and install Reactive from the VSIX package.",
+      "Open the extension host by clicking on the Reactive icon in the sidebar, and select a top-level component to visualize.",
     link: null,
   },
   {
     title: "Step 3: Start Visualizing",
     description:
-      "Open your React project, launch the extension, and start exploring your component tree.",
+      "Explore the component tree, inspect state, and start migrating from class to functional components.",
     link: null,
   },
 ];
@@ -42,7 +43,7 @@ const GettingStarted = () => {
                 rel="noopener noreferrer"
                 className="text-neonPink underline hover:text-neonCyan"
               >
-                Learn More
+                Install from Marketplace
               </a>
             )}
           </div>
