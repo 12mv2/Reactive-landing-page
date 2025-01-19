@@ -1,0 +1,59 @@
+[
+    {
+      "title": "Test Responsiveness Across Devices",
+      "body": "Ensure the landing page is fully responsive on mobile, tablet, and desktop devices.\n\n### Steps to Complete:\n1. Open the page on different devices or use browser developer tools (e.g., Chrome DevTools) to simulate screen sizes.\n2. Focus on the Hero section (e.g., text scaling, video resizing).\n3. Check the grid layout in the Features and Demo sections.\n4. Adjust Tailwind CSS classes or custom styles as needed.\n\n### Acceptance Criteria:\n- The page layout adapts properly to all screen sizes.\n- No visual or functional issues are present on smaller devices.",
+      "labels": ["critical", "enhancement"],
+      "priority": "high",
+      "difficulty": "moderate"
+    },
+    {
+      "title": "Improve Accessibility",
+      "body": "Increase accessibility by following WCAG guidelines and improving support for visually impaired users.\n\n### Steps to Complete:\n1. Add `alt` attributes to all images (descriptive text for screen readers).\n2. Add `aria-label` attributes for buttons and interactive elements.\n3. Use a tool like [axe](https://www.deque.com/axe/) or Lighthouse to audit the page's accessibility.\n4. Ensure sufficient color contrast between text and backgrounds.\n\n### Acceptance Criteria:\n- All interactive elements are screen-reader friendly.\n- Color contrast passes WCAG AA or higher standards.\n- Accessibility tests show no major issues.",
+      "labels": ["critical", "accessibility"],
+      "priority": "high",
+      "difficulty": "easy"
+    },
+    {
+      "title": "Optimize Images and Videos",
+      "body": "Reduce asset sizes to improve load times and overall performance.\n\n### Steps to Complete:\n1. Compress the `reactive.svg` logo using tools like [SVGO](https://github.com/svg/svgo).\n2. Optimize demo videos by reducing resolution or using a codec like H.264.\n3. Serve videos in multiple formats (`.mp4`, `.webm`) for compatibility.\n4. Verify that optimized assets load correctly on all supported browsers.\n\n### Acceptance Criteria:\n- Optimized assets are visually indistinguishable from the originals.\n- Videos load faster and play seamlessly across browsers.",
+      "labels": ["critical", "performance"],
+      "priority": "high",
+      "difficulty": "easy"
+    },
+    {
+      "title": "Add Basic SEO Tags",
+      "body": "Improve the page's visibility on search engines and social media by adding appropriate meta tags.\n\n### Steps to Complete:\n1. Add `<meta>` tags for `description`, `keywords`, and Open Graph (`og:title`, `og:description`, `og:image`).\n2. Use a tool like [Meta Tags](https://metatags.io/) to preview how the page will look when shared.\n3. Ensure the `description` accurately summarizes the project's purpose.\n\n### Acceptance Criteria:\n- Social media previews display correctly when sharing the page.\n- Meta tags are validated using a testing tool.",
+      "labels": ["critical", "SEO"],
+      "priority": "high",
+      "difficulty": "easy"
+    },
+    {
+      "title": "Add Error Handling for Demo Videos",
+      "body": "Handle scenarios where embedded YouTube videos fail to load.\n\n### Steps to Complete:\n1. Wrap the `<iframe>` in a container.\n2. Add a fallback message or placeholder image if the video fails to load.\n3. Test the fallback by simulating network issues or using developer tools.\n\n### Acceptance Criteria:\n- A clear fallback message or placeholder appears when a video fails to load.\n- Fallback content is styled to match the page design.",
+      "labels": ["important", "bug"],
+      "priority": "medium",
+      "difficulty": "easy"
+    },
+    {
+      "title": "Add Dark Mode Toggle",
+      "body": "Add a toggle button to switch between dark and light modes.\n\n### Steps to Complete:\n1. Add a button in the header or footer for the toggle.\n2. Use Tailwind's `dark` mode class to manage color schemes.\n3. Test the toggle functionality across all sections of the page.\n\n### Acceptance Criteria:\n- The toggle button is visible and functional.\n- Light and dark modes are fully implemented and consistent.",
+      "labels": ["important", "enhancement"],
+      "priority": "medium",
+      "difficulty": "moderate"
+    },
+    {
+      "title": "Consolidate README Files",
+      "body": "Merge `README.md` and `README1.md` into a single file.\n\n### Steps to Complete:\n1. Combine the content from both files.\n2. Remove redundant or outdated sections.\n3. Add deployment instructions (e.g., Vercel/Netlify) and contribution guidelines.\n\n### Acceptance Criteria:\n- A single `README.md` file exists with clear and concise information.\n- Includes deployment steps and instructions for contributors.",
+      "labels": ["important", "documentation"],
+      "priority": "medium",
+      "difficulty": "easy"
+    },
+    {
+      "title": "Enhance Hero Section Aesthetics",
+      "body": "Make the Hero section more visually engaging.\n\n### Steps to Complete:\n1. Add animations for the heading text (e.g., fade-in or slide-in effects).\n2. Enhance the background with gradients or particle effects.\n3. Test the changes on mobile and desktop to ensure responsiveness.\n\n### Acceptance Criteria:\n- Text animations are smooth and visually appealing.\n- Background enhancements don’t affect page load speed or responsiveness.",
+      "labels": ["optional", "design"],
+      "priority": "low",
+      "difficulty": "moderate"
+    }
+  ]
+  

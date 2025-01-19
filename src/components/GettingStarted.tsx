@@ -1,7 +1,12 @@
-import React from 'react';
+interface Step {
+  link : string | null;
+  title: string;
+  description: string | JSX.Element;
+}
 
-const steps = [
+const steps: Step[] = [
   {
+    link: "https://marketplace.visualstudio.com/items?itemName=oslabs-reactive.reactive",
     title: "Step 1: Download the Extension",
     description:
     <p>
@@ -9,16 +14,16 @@ const steps = [
     </p>
   },
   {
+    link: null,
     title: "Step 2: Open the Extension Host and Select a Top Level Component",
     description:
       "Open the extension host by clicking on the Reactive icon in the sidebar, and select a top-level component to visualize.",
-    link: null,
   },
   {
+    link: null,
     title: "Step 3: Start Visualizing",
     description:
       "Explore the component tree, inspect state, and start migrating from class to functional components.",
-    link: null,
   },
 ];
 

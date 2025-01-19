@@ -1,4 +1,3 @@
-import React from 'react';
 import DemoVideo from './DemoVideo';
 
 const Hero = () => {
@@ -29,11 +28,11 @@ const Hero = () => {
 
         {/* Call to Action */}
         <div className="text-center mb-8">
-          <button className="px-8 py-4 bg-neonGreen text-darkBackground font-bold rounded-lg 
-                           transition-all duration-300 hover:bg-neonGreenDark hover:shadow-neon-green
-                           transform hover:scale-105">
-            Get Started
-          </button>
+        {/* <button
+  onClick={() => document.getElementById('getting-started')?.scrollIntoView({ behavior: 'smooth' })}
+  className="..."
+>
+          </button> */}
         </div>
       </div>
 

@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Set the global background color */
+html, body {
+    background-color: #000; /* Black */
+    /* background-color: #001f3f; Navy Blue */
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+  }
+  
