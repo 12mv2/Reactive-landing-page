@@ -25,7 +25,6 @@ const DemoVideo = () => {
     playsInline
   >
     <source src="https://reactive-video-bucket.s3.us-east-2.amazonaws.com/demo2_no_audio.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAXEVXYSLVE7V4LWHB%2F20250119%2Fus-east-2%2Fs3%2Faws4_request&X-Amz-Date=20250119T233620Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=9d0e7adc0c21cb6c6c6d643bed90634d63c4af61ff985d117456b860ba60c574" type="video/mp4" />
-    Your browser does not support the video tag.
   </video>
 </div>
 
