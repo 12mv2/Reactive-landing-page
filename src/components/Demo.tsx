@@ -15,19 +15,22 @@ const Demo = () => {
     const videoElement = document.getElementById(id) as HTMLIFrameElement | null;
     if (videoElement) {
       // Trigger full-screen
-      if (videoElement.requestFullscreen) {
-        videoElement.requestFullscreen();
-      } else if ((videoElement as any).webkitRequestFullscreen) {
-        (videoElement as any).webkitRequestFullscreen();
-      } else if ((videoElement as any).msRequestFullscreen) {
-        (videoElement as any).msRequestFullscreen();
+      const requestFullscreen =
+        videoElement.requestFullscreen ||
+        (videoElement as any).webkitRequestFullscreen ||
+        (videoElement as any).msRequestFullscreen;
+      if (requestFullscreen) {
+        requestFullscreen.call(videoElement);
       } else {
         alert("Fullscreen not supported on this browser.");
       }
 
       // Send play command to YouTube iframe
       videoElement.contentWindow?.postMessage(
-        JSON.stringify({ event: "command", func: "playVideo" }),
+        JSON.stringify({
+          event: "command",
+          func: "playVideo",
+        }),
         "*"
       );
     }

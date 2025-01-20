@@ -10,7 +10,7 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto px-4">
         <div className="text-center mb-8">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">
-            Welcome to{' '}
+            <span className="text-stroke-green-to-black">Welcome to</span>{' '}
             <span className="bg-gradient-to-r from-neonPink via-neonCyan to-neonGreen bg-clip-text text-transparent">
               Reactive
             </span>
