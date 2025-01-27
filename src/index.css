@@ -12,3 +12,9 @@ html, body {
     width: 100%;
   }
   
+.text-stroke-green-to-black {
+  -webkit-text-stroke: 1px #39FF14; /* Thin green stroke */
+  -webkit-text-fill-color: transparent; /* Transparent fill for text */
+  text-shadow: 0 0 8px #39FF14, 0 0 5px black; /* Glow effect transitioning from green to black */
+}
+  
